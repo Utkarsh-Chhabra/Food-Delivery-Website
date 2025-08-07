@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZestyBite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap" rel="stylesheet">
+    <!-- Model Viewer for 3D GLB files -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="assets/favicon1.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo cairo-play">
+                <i class="fas fa-utensils"></i>
+                ZestyBite
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/About.html" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="tel:+1234567890" class="phone-number">
+                    <i class="fas fa-phone"></i>
+                    <span style="color: var(--text-color);">
+                        + 91 234 567 890
+                    </span>
+                    
+                </a>
+
+                <div class="nav-icons">
+                    <a href="#" class="nav-icon">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="nav-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="#" class="nav-icon">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <div class="hero-model-slider">
+                    <div class="hero-model-track">
+                        <div class="hero-model-slide">
+                            <model-viewer 
+                                src="models/burger_explosion.glb" 
+                                alt="Deluxe Burger"
+                                auto-rotate 
+
+                                background-color="transparent"
+                                shadow-intensity="1"
+                                exposure="1"
+                                shadow-softness="0.5">
+                            </model-viewer>
+                            <div class="model-info">
+                                <h4>Deluxe Burger</h4>
+                                <span>₹ 230</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-model-slide">
+                            <model-viewer 
+                                src="models/pizzahott.glb" 
+                                alt="Margherita Pizza"
+                                auto-rotate 
+                                background-color="transparent"
+                                shadow-intensity="1"
+                                exposure="1"
+                                shadow-softness="0.5">
+                            </model-viewer>
+                            <div class="model-info">
+                                <h4>Margherita Pizza</h4>
+                                <span>₹ 400</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-model-slide">
+                            <model-viewer 
+                                src="models/3d_ramen.glb" 
+                                alt="Spicy Ramen"
+                                auto-rotate 
+                                background-color="transparent"
+                                shadow-intensity="1"
+                                exposure="1"
+                                shadow-softness="0.5">
+                            </model-viewer>
+                            <div class="model-info">
+                                <h4>Spicy Ramen</h4>
+                                <span>₹ 300</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-model-slide">
+                            <model-viewer 
+                                src="models/pasta_bowl_-_polycam.glb" 
+                                alt="Pasta Bowl"
+                                auto-rotate 
+                                background-color="transparent"
+                                shadow-intensity="1"
+                                exposure="1"
+                                shadow-softness="0.5">
+                            </model-viewer>
+                            <div class="model-info">
+                                <h4>Creamy Pasta</h4>
+                                <span>₹ 350</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to ZestyBite</h1>
+                <p class="hero-subtitle">Delicious food delivered to your doorstep</p>
+                <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+        </div>
+    </section>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
