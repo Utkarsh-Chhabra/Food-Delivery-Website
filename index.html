@@ -4,14 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tastara - Premium Cloud Kitchen</title>
+    <title>ZestyBite</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Cairo+Play:wght@200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
     <link rel="icon" href="assets/favicon1.png" type="image/x-icon">
 </head>
@@ -19,9 +15,9 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="#" class="logo">
-                <i class="fas fa-crown"></i>
-                Tastara
+            <a href="#" class="logo cairo-play">
+                <i class="fas fa-utensils"></i>
+                ZestyBite
             </a>
 
             <ul class="nav-menu">
@@ -29,44 +25,36 @@
                     <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#dinner-menu" class="nav-link">Dinner Menu</a>
+                    <a href="pages/About.html" class="nav-link">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#kitchen" class="nav-link">Our Kitchen</a>
+                    <a href="pages/menu.html" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
-<<<<<<< Updated upstream
-                    <a href="#contact" class="nav-link">Contact</a>
-=======
                     <a href="pages/contact.html" class="nav-link">Contact</a>
->>>>>>> Stashed changes
                 </li>
             </ul>
 
             <div class="nav-right">
                 <a href="tel:+1234567890" class="phone-number">
                     <i class="fas fa-phone"></i>
-                    <span>+ 91 234 567 890</span>
+                    <span style="color: var(--text-color);">
+                        + 91 234 567 890
+                    </span>
+                    
                 </a>
 
                 <div class="nav-icons">
-<<<<<<< Updated upstream
-                    <a href="#" class="nav-icon">
-=======
                     <a href="pages/logIn.html" class="nav-icon">
->>>>>>> Stashed changes
                         <i class="fas fa-user"></i>
                     </a>
                     <a href="#" class="nav-icon">
-                        <i class="fas fa-shopping-bag"></i>
+                        <i class="fas fa-shopping-cart"></i>
                         <span class="cart-count">0</span>
                     </a>
-<<<<<<< Updated upstream
-=======
                     <a href="pages/search.html" class="nav-icon">
                         <i class="fas fa-search"></i>
                     </a>
->>>>>>> Stashed changes
                 </div>
             </div>
 
@@ -78,70 +66,82 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Video Background -->
+    <div class="promo-banner">
+                <div class="promo-content">
+                    <div class="promo-text">
+                        <h3> Grand Opening Celebration!</h3>
+                        <p>Use code <strong>GRAND20</strong> and get 20% off on all orders above ₹400</p>
+                    </div>
+                    <div class="promo-timer">
+                        <span>Ends in: </span>
+                        <div class="timer">
+                            <span id="hours">23</span>:
+                            <span id="minutes">59</span>:
+                            <span id="seconds">59</span>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge">
-                        <i class="fas fa-award"></i>
-                        <span>Premium Cloud Kitchen</span>
+                    <h1 class="hero-title">Delicious Food</h1>
+                    <h2 class="hero-subtitle">Delivered to Your Door</h2>
+                    <p class="hero-description">Experience the finest flavors from around the world, prepared fresh and delivered hot to your doorstep.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">
+                            <i class="fas fa-utensils"></i>
+                            Order Now
+                        </a>
                     </div>
-                    <h1 class="hero-title">Exquisite Dinner</h1>
-                    <h2 class="hero-subtitle">Crafted with Passion</h2>
-                    <p class="hero-description">From our state-of-the-art cloud kitchen to your dining table. We prepare
-                        gourmet dinner experiences with the finest ingredients and culinary expertise.</p>
-
-                    <div class="order-form">
-                        <div class="location-input">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <input type="text" placeholder="Enter your delivery address" id="location">
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Happy Customers</p>
                         </div>
-                        <button class="btn-order">
-                            <i class="fas fa-search"></i>
-                            Find Restaurants
-                        </button>
-                    </div>
-
-                    <div class="hero-features">
-                        <div class="feature-item">
-                            <i class="fas fa-clock"></i>
-                            <span>30-45 min delivery</span>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Menu Items</p>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>Safe & Hygienic</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-star"></i>
-                            <span>5-star rated</span>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Delivery</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="hero-visual">
-                    <div class="floating-cards">
-                        <div class="dish-card">
-                            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=300&h=200&fit=crop"
-                                alt="Gourmet Pasta">
-                            <div class="dish-info">
-                                <h4>Truffle Pasta</h4>
-                                <span>₹899</span>
+                    <div class="hero-gallery">
+                        <div class="main-food-image">
+                            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&h=500&fit=crop&crop=center" alt="Delicious Burger" class="food-img">
+                            <div class="image-overlay">
+                                <h3>Signature Burger</h3>
+                                <span>₹230</span>
                             </div>
                         </div>
-                        <div class="dish-card">
-                            <img src="https://content.jdmagicbox.com/comp/def_content/pizza_outlets/default-pizza-outlets-13.jpg"
-                                alt="Premium Pizza">
-                            <div class="dish-info">
-                                <h4>Artisan Pizza</h4>
-                                <span>₹749</span>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="https://media.istockphoto.com/id/1442417585/photo/person-getting-a-piece-of-cheesy-pepperoni-pizza.jpg?s=2048x2048&w=is&k=20&c=5qfqYi5DEhhVjJ-DIYB4MxUq31EmkvyEnNgNLm5LVpY=" alt="Pizza">
+                                <div class="item-info">
+                                    <span>Pizza</span>
+                                    <small>₹400</small>
+                                </div>
                             </div>
-                        </div>
-                        <div class="dish-card">
-                            <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=300&h=200&fit=crop"
-                                alt="Gourmet Steak">
-                            <div class="dish-info">
-                                <h4>Wagyu Steak</h4>
-                                <span>₹1,299</span>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=200&h=200&fit=crop&crop=center" alt="Ramen">
+                                <div class="item-info">
+                                    <span>Ramen</span>
+                                    <small>₹300</small>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=200&h=200&fit=crop&crop=center" alt="Pasta">
+                                <div class="item-info">
+                                    <span>Pasta</span>
+                                    <small>₹350</small>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -149,95 +149,119 @@
             </div>
         </div>
     </section>
-    <!-- Cloud Kitchen Features -->
-    <section class="kitchen-features">
+
+    <!-- Offers Section -->
+    <section class="offers">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Why Choose Tastara?</h2>
-                <p class="section-subtitle">From our kitchen to your table - the perfect dinner experience</p>
+                <h2 class="section-title">Special Offers</h2>
+                <p class="section-subtitle">Don't miss out on our amazing deals and discounts</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-utensils"></i>
+            <div class="offers-grid">
+                <div class="offer-card featured-offer">
+                    <div class="offer-badge">
+                        <span>50% OFF</span>
                     </div>
-                    <h3>Expert Chefs</h3>
-                    <p>Our master chefs bring years of culinary expertise to create unforgettable dinner experiences</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-seedling"></i>
+                    <div class="offer-content">
+                        <h3>Weekend Special</h3>
+                        <p>Get 50% off on all pizza orders above ₹500</p>
+                        <div class="offer-validity">Valid till Sunday</div>
+                        <button class="btn-offer">Order Now</button>
                     </div>
-                    <h3>Fresh Ingredients</h3>
-                    <p>Sourced daily from local farms and premium suppliers for the highest quality</p>
+                    <div class="offer-visual">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
+                
+                <div class="offer-card">
+                    <div class="offer-badge">
+                        <span>Buy 1 Get 1</span>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Burger Bonanza</h3>
+                        <p>Buy any burger and get another one absolutely free</p>
+                        <div class="offer-validity">Limited time</div>
+                        <button class="btn-offer">Grab Deal</button>
+                    </div>
+                    <div class="offer-visual">
+                        <i class="fas fa-hamburger"></i>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-badge">
+                        <span>₹100 OFF</span>
+                    </div>
+                    <div class="offer-content">
+                        <h3>First Order</h3>
+                        <p>₹100 off on your first order. No minimum order value</p>
+                        <div class="offer-validity">For new users</div>
+                        <button class="btn-offer">Use Code: FIRST100</button>
+                    </div>
+                    <div class="offer-visual">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-badge">
+                        <span>Free Delivery</span>
+                    </div>
+                    <div class="offer-content">
+                        <h3>No Delivery Charges</h3>
+                        <p>Free delivery on orders above ₹300. Valid all day</p>
+                        <div class="offer-validity">Today only</div>
+                        <button class="btn-offer">Order Free</button>
+                    </div>
+                    <div class="offer-visual">
                         <i class="fas fa-shipping-fast"></i>
                     </div>
-                    <h3>Fast Delivery</h3>
-                    <p>Hot and fresh dinners delivered to your doorstep in 30-45 minutes</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Premium Quality</h3>
-                    <p>Every dish is prepared with care and attention to detail in our state-of-the-art kitchen</p>
                 </div>
             </div>
+            
+            <!-- <div class="promo-banner">
+                <div class="promo-content">
+                    <div class="promo-text">
+                        <h3>🎉 Grand Opening Celebration!</h3>
+                        <p>Use code <strong>GRAND20</strong> and get 20% off on all orders above ₹400</p>
+                    </div>
+                    <div class="promo-timer">
+                        <span>Ends in: </span>
+                        <div class="timer">
+                            <span id="hours">23</span>:
+                            <span id="minutes">59</span>:
+                            <span id="seconds">59</span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </section>
 
-    <!-- Dinner Categories -->
-    <section class="dinner-categories" id="dinner-menu">
+    <!-- Categories Section -->
+    <section class="categories" id="menu">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Tonight's Dinner Menu</h2>
-                <p class="section-subtitle">Curated dinner selections for a perfect evening</p>
+                <h2 class="section-title">What's on your mind?</h2>
+                <p class="section-subtitle">Choose from our delicious categories</p>
             </div>
             <div class="categories-grid">
-                <div class="category-card" data-category="indian">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=300&h=300&fit=crop"
-                            alt="Indian Cuisine">
+                <div class="category-card" data-category="burgers">
+                    <div class="category-icon">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=150&h=150&fit=crop&crop=center" alt="Burgers">
                     </div>
-                    <div class="category-content">
-                        <h3>Indian Delights</h3>
-                        <p>Authentic spices & flavors</p>
-                        <span class="category-count">12 dishes</span>
-                    </div>
+                    <h3>Burgers</h3>
+                    <p>Juicy & Fresh</p>
                 </div>
-<<<<<<< Updated upstream
-                <div class="category-card" data-category="continental">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=300&h=300&fit=crop"
-                            alt="Continental">
-                    </div>
-                    <div class="category-content">
-                        <h3>Continental</h3>
-                        <p>European classics</p>
-                        <span class="category-count">8 dishes</span>
-=======
 
                 <a href="pages/healthy.html" style="text-decoration: none; color: inherit;">
                 <div class="category-card" data-category="Healthy Bites">
                     <div class="category-icon">
                         <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/01/12/12/healthy-avo-food.jpg" alt="Healthy Bites">
->>>>>>> Stashed changes
                     </div>
+                    <h3>Healthy Bites</h3>
+                    <p>Eat Smart</p>
                 </div>
-<<<<<<< Updated upstream
-                <div class="category-card" data-category="asian">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=300&h=300&fit=crop"
-                            alt="Asian Cuisine">
-                    </div>
-                    <div class="category-content">
-                        <h3>Asian Fusion</h3>
-                        <p>Modern Asian flavors</p>
-                        <span class="category-count">10 dishes</span>
-=======
                 </a>
 
 
@@ -245,148 +269,152 @@
                 <div class="category-card" data-category="noodles">
                     <div class="category-icon">
                         <img src="https://tb-static.uber.com/prod/image-proc/processed_images/875c3e006e46be285238cbee48df46fb/69ad85cd7b39888042b3bbf1c22d630d.webp" alt="Noodles">
->>>>>>> Stashed changes
                     </div>
+                    <h3>Desi Tadka</h3>
+                    <p>Asian Delight</p>
                 </div>
-<<<<<<< Updated upstream
-                <div class="category-card" data-category="grill">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=300&h=300&fit=crop"
-                            alt="Grilled Items">
-=======
                 </a>
 
                 <a href="pages/south.html" style="text-decoration: none; color: inherit;">
                 <div class="category-card" data-category="rice">
                     <div class="category-icon">
                         <img src="https://sukhis.com/app/uploads/2022/04/image3-4.jpg" alt="Rice">
->>>>>>> Stashed changes
                     </div>
-                    <div class="category-content">
-                        <h3>Grilled Specialties</h3>
-                        <p>Perfectly grilled meats</p>
-                        <span class="category-count">6 dishes</span>
+                    <h3>South Treats</h3>
+                    <p>Comfort Food</p>
+                </div>
+                </a>
+
+                <div class="category-card" data-category="desserts">
+                    <div class="category-icon">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=150&h=150&fit=crop&crop=center" alt="Desserts">
                     </div>
+                    <h3>Desserts</h3>
+                    <p>Sweet Treats</p>
+                </div>
+                <div class="category-card" data-category="drinks">
+                    <div class="category-icon">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=150&h=150&fit=crop&crop=center" alt="Drinks">
+                    </div>
+                    <h3>Drinks</h3>
+                    <p>Refreshing</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Chef's Special -->
-    <section class="chefs-special">
+    <!-- Frequently Ordered Shops Section
+    <section class="featured">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Chef's Special Tonight</h2>
-                <p class="section-subtitle">Handpicked by our master chef for tonight's dinner</p>
+                <h2 class="section-title">Frequently Ordered Shops</h2>
+                <p class="section-subtitle">Popular restaurants our customers love</p>
             </div>
-            <div class="special-grid">
-                <div class="special-card">
-                    <div class="special-image">
-                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
-                            alt="Truffle Risotto">
-                        <div class="special-badge">Chef's Choice</div>
+            <div class="featured-grid">
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&h=200&fit=crop&crop=center" alt="Burger Palace">
                     </div>
-                    <div class="special-content">
-                        <h3>Truffle Mushroom Risotto</h3>
-                        <p>Creamy arborio rice with wild mushrooms, black truffle, and aged parmesan</p>
-                        <div class="special-details">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>4.9</span>
-                            </div>
-                            <div class="prep-time">
-                                <i class="fas fa-clock"></i>
-                                <span>25 mins</span>
-                            </div>
+                    <div class="shop-info">
+                        <h3>Burger Palace</h3>
+                        <p>Premium burgers and fast food with 4.8★ rating</p>
+                        <div class="shop-details">
+                            <span class="delivery-time"><i class="fas fa-clock"></i> 25-30 mins</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
                         </div>
-                        <div class="price-section">
-                            <span class="price">₹899</span>
-                            <button class="btn-add-special">Add to Cart</button>
-                        </div>
+                        <button class="btn-add">View Menu</button>
                     </div>
                 </div>
-                <div class="special-card">
-                    <div class="special-image">
-                        <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=400&h=300&fit=crop"
-                            alt="Wagyu Steak">
-                        <div class="special-badge">Premium</div>
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300&h=200&fit=crop&crop=center" alt="Italiano Pizzeria">
                     </div>
-                    <div class="special-content">
-                        <h3>Wagyu Beef Tenderloin</h3>
-                        <p>Grade A5 Wagyu with roasted vegetables and red wine reduction</p>
-                        <div class="special-details">
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <span>5.0</span>
-                            </div>
-                            <div class="prep-time">
-                                <i class="fas fa-clock"></i>
-                                <span>35 mins</span>
-                            </div>
+                    <div class="shop-info">
+                        <h3>Italiano Pizzeria</h3>
+                        <p>Authentic Italian pizzas and pasta with fresh ingredients</p>
+                        <div class="shop-details">
+                            <span class="delivery-time"><i class="fas fa-clock"></i> 30-35 mins</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
                         </div>
-                        <div class="price-section">
-                            <span class="price">₹1,299</span>
-                            <button class="btn-add-special">Add to Cart</button>
+                        <button class="btn-add">View Menu</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-image">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=300&h=200&fit=crop&crop=center" alt="Asian Delights">
+                    </div>
+                    <div class="shop-info">
+                        <h3>Asian Delights</h3>
+                        <p>Traditional Asian cuisine with modern flavors</p>
+                        <div class="shop-details">
+                            <span class="delivery-time"><i class="fas fa-clock"></i> 20-25 mins</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
                         </div>
+                        <button class="btn-add">View Menu</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- Cloud Kitchen Story -->
-    <section class="kitchen-story" id="kitchen">
+    <!-- About Section -->
+    <section class="about" id="about">
         <div class="container">
-            <div class="story-content">
-                <div class="story-text">
-                    <div class="story-badge">
-                        <i class="fas fa-crown"></i>
-                        <span>Our Story</span>
-                    </div>
-                    <h2>From Cloud to Your Table</h2>
-                    <p>Tastara revolutionizes dinner delivery with our state-of-the-art cloud kitchen. We combine
-                        traditional culinary techniques with modern technology to create exceptional dining experiences.
-                    </p>
-                    <div class="story-features">
-                        <div class="story-feature">
-                            <i class="fas fa-thermometer-half"></i>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose ZestyBite?</h2>
+                    <p>We're passionate about delivering exceptional food experiences right to your doorstep. With fresh ingredients, expert chefs, and lightning-fast delivery, we make every meal memorable.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
                             <div>
-                                <h4>Temperature Controlled</h4>
-                                <p>Advanced kitchen systems maintain perfect cooking temperatures</p>
+                                <h4>Fast Delivery</h4>
+                                <p>30 minutes or less</p>
                             </div>
                         </div>
-                        <div class="story-feature">
-                            <i class="fas fa-microscope"></i>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
                             <div>
-                                <h4>Quality Tested</h4>
-                                <p>Every ingredient is tested for freshness and quality</p>
+                                <h4>Fresh Ingredients</h4>
+                                <p>Sourced daily</p>
                             </div>
                         </div>
-                        <div class="story-feature">
-                            <i class="fas fa-laptop"></i>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
                             <div>
-                                <h4>Smart Technology</h4>
-                                <p>IoT-enabled kitchen for precise cooking and timing</p>
+                                <h4>Quality Assured</h4>
+                                <p>100% satisfaction</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="story-visual">
-                    <div class="kitchen-image">
-                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop"
-                            alt="Modern Kitchen">
-                        <div class="kitchen-stats">
-                            <div class="stat-item">
-                                <h4>50+</h4>
-                                <p>Expert Chefs</p>
+                <div class="about-visual">
+                    <div class="about-image-grid">
+                        <div class="about-main-image">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop&crop=center" alt="Professional Kitchen">
+                            <div class="image-badge">
+                                <i class="fas fa-award"></i>
+                                <span>Premium Quality</span>
                             </div>
-                            <div class="stat-item">
-                                <h4>1000+</h4>
-                                <p>Orders Daily</p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="about-stat">
+                                <div class="stat-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h4>10,000+</h4>
+                                    <p>Satisfied Customers</p>
+                                </div>
                             </div>
-                            <div class="stat-item">
-                                <h4>4.9</h4>
-                                <p>Average Rating</p>
+                            <div class="about-stat">
+                                <div class="stat-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h4>4.8/5</h4>
+                                    <p>Average Rating</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -397,133 +425,37 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-wave">
-            <svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,106.7C960,117,1056,139,1152,133.3C1248,128,1344,96,1392,80L1440,64V200H1392C1344,200,1248,200,1152,200C1056,200,960,200,864,200C768,200,672,200,576,200C480,200,384,200,288,200C192,200,96,200,48,200H0V96Z"
-                    fill="url(#footerGradient)" />
-                <defs>
-                    <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
-                        <stop offset="50%" style="stop-color:#ff8c42;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#ffa726;stop-opacity:1" />
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section footer-brand">
-                    <div class="footer-logo">
-                        <div class="logo-icon">
-                            <i class="fas fa-crown"></i>
-                        </div>
-                        <h3>Tastara</h3>
-                    </div>
-                    <p>Premium cloud kitchen delivering exquisite dinner experiences right to your doorstep.</p>
-                    <div class="footer-stats">
-                        <div class="stat">
-                            <span class="stat-number">50K+</span>
-                            <span class="stat-label">Happy Customers</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">4.8★</span>
-                            <span class="stat-label">Average Rating</span>
-                        </div>
-                    </div>
+                <div class="footer-section">
+                    <h3>ZestyBite</h3>
+                    <p>Delivering happiness, one meal at a time.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-
                 <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
-                        <li><a href="#"><i class="fas fa-utensils"></i>Menu</a></li>
-                        <li><a href="#"><i class="fas fa-info-circle"></i>About Us</a></li>
-                        <li><a href="#"><i class="fas fa-percentage"></i>Offers</a></li>
-                        <li><a href="#"><i class="fas fa-star"></i>Reviews</a></li>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
-                    <h4>Categories</h4>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-pizza-slice"></i>Pizza</a></li>
-                        <li><a href="#"><i class="fas fa-hamburger"></i>Burgers</a></li>
-                        <li><a href="#"><i class="fas fa-pepper-hot"></i>Indian</a></li>
-                        <li><a href="#"><i class="fas fa-fish"></i>Chinese</a></li>
-                        <li><a href="#"><i class="fas fa-ice-cream"></i>Desserts</a></li>
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@zestybite.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
                     </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Contact Us</h4>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <span class="contact-label">Call Us</span>
-                                <span class="contact-value">+91 234 567 890</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <span class="contact-label">Email</span>
-                                <span class="contact-value">info@tastara.com</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <span class="contact-label">Location</span>
-                                <span class="contact-value">Mumbai, India</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="contact-details">
-                                <span class="contact-label">Hours</span>
-                                <span class="contact-value">24/7 Service</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <div class="copyright">
-                        <p>&copy; 2025 Tastara. All rights reserved.</p>
-                        <p class="tagline">Made with <i class="fas fa-heart"></i> for food lovers</p>
-                    </div>
-                    <div class="footer-links-bottom">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Refund Policy</a>
-                    </div>
-                </div>
+                <p>&copy; 2025 ZestyBite. All rights reserved.</p>
             </div>
         </div>
     </footer>
