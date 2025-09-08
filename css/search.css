@@ -113,17 +113,30 @@ body {
     gap: 20px;
 }
 
+
 .phone-number {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: var(--text-light);
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: rgba(243, 156, 18, 0.1);
     transition: all 0.3s ease;
+    border: 1px solid rgba(243, 156, 18, 0.2);
 }
 
 .phone-number:hover {
-    color: var(--primary-color);
+    background: rgba(243, 156, 18, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+}
+
+.phone-number i {
+    margin-right: 8px;
+    animation: pulse 2s infinite;
 }
 
 .nav-icons {

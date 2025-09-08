@@ -36,7 +36,6 @@ body {
 /* Navbar - Same as About page */
 .navbar {
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
     padding: 0;
     position: sticky;
     top: 0;
@@ -213,8 +212,6 @@ body {
     font-size: 4rem;
     font-weight: 700;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 20px;
     animation: fadeInUp 0.8s ease-out;
@@ -237,8 +234,6 @@ body {
     font-size: 3rem;
     font-weight: 700;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 15px;
 }
