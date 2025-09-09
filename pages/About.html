@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - ZestyBite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../css/about.css">
@@ -13,54 +15,52 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="../index.html" class="logo cairo-play">
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a href="../index.html" class="navbar-brand logo cairo-play">
                 <i class="fas fa-utensils"></i>
                 ZestyBite
             </a>
 
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item" style="border-bottom: 3px solid var(--primary-color);">
-                    <a href="About.html" class="nav-link active" style="color: var(--primary-color);">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="nav-right">
-                <a href="tel:+1234567890" class="phone-number">
-                    <i class="fas fa-phone"></i>
-                    <span style="color: var(--text-color);">
-                        + 91 234 567 890
-                    </span>
-                </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About.html" class="nav-link active" aria-current="page">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
 
-                <div class="nav-icons">
-                    <a href="logIn.html" class="nav-icon">
-                        <i class="fas fa-user"></i>
+                <div class="d-flex align-items-center">
+                    <a href="tel:+919234567890" class="phone-number d-none d-lg-flex me-3">
+                        <i class="fas fa-phone me-2"></i>
+                        <span>+ 91 234 567 890</span>
                     </a>
-                    <a href="#" class="nav-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">0</span>
-                    </a>
-                    <a href="search.html" class="nav-icon">
-                        <i class="fas fa-search"></i>
-                    </a>
+
+                    <div class="nav-icons d-flex">
+                        <a href="logIn.html" class="nav-icon me-2">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <a href="#" class="nav-icon me-2 position-relative">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                        <a href="search.html" class="nav-icon">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
         </div>
     </nav>
@@ -309,6 +309,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../nav.js"></script>
 </body>
 
