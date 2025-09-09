@@ -120,7 +120,6 @@ body {
 .dish-card {
   background: #1c1c1c;
   border-radius: 12px;
-  overflow: hidden;
   text-align: center;
   display: flex;
   flex-direction: column;
