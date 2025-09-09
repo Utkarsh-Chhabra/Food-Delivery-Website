@@ -714,7 +714,7 @@ body {
 
 /* Promo Banner */
 .promo-banner {
-    background: linear-gradient(135deg, #cc8512 0%, #d36f17 100%); /* soft peach to pastel orange */
+    background: linear-gradient(135deg, #cc8512 0%, #d36f17 100%); 
     border-radius: 20px;
     padding: 40px;
     color: #2c2c2c; 
@@ -2037,4 +2037,70 @@ body {
     .about-stat {
         padding: 12px;
     }
+}
+
+@media (max-width: 320px) {
+    .body {
+        width: 100% !important;
+    }
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .hero-visual {
+        height: 200px;
+    }
+    
+    .hero-gallery {
+        max-width: 200px;
+    }
+    
+    .food-img {
+        height: 150px;
+    }
+    
+    .category-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .category-card h3 {
+        font-size: 0.95rem;
+    }
+    
+    .offer-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .shop-info h3,
+    .dish-info h3 {
+        font-size: 1.1rem;
+    }
+    
+    .about-text h2 {
+        font-size: 1.4rem;
+    }
+    
+    .about-main-image img {
+        height: 150px;
+    }
+    
+    .stat-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .stat-content h4 {
+        font-size: 1rem;
+    }
+    
 }
