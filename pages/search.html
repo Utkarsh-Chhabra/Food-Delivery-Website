@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - ZestyBite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="icon" href="../assets/favicon1.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="logo cairo-play">
+                <i class="fas fa-utensils"></i>
+                ZestyBite
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="About.html" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav-right">
+                <a href="tel:+1234567890" class="phone-number">
+                    <i class="fas fa-phone"></i>
+                    <span style="color: var(--text-color);">
+                        + 91 234 567 890
+                    </span>
+                </a>
+
+                <div class="nav-icons">
+                    <a href="logIn.html" class="nav-icon">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="nav-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="search.html" class="nav-icon active">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Hero Section -->
+    <section class="search-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Find Your Favorite Food</h1>
+                <p class="hero-description">Search from thousands of dishes and restaurants</p>
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="searchInput" placeholder="Search for dishes, restaurants, cuisines..." autocomplete="off">
+                        <button type="button" class="search-btn" id="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="search-suggestions" id="searchSuggestions">
+                        <div class="suggestion-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Recent: Butter Chicken</span>
+                        </div>
+                        <div class="suggestion-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Recent: Pizza Margherita</span>
+                        </div>
+                        <div class="suggestion-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Trending: Biryani</span>
+                        </div>
+                        <div class="suggestion-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Trending: Burger</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <h3>Filter by:</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="restaurants">Restaurants</button>
+                        <button class="filter-btn" data-filter="dishes">Dishes</button>
+                        <button class="filter-btn" data-filter="cuisines">Cuisines</button>
+                    </div>
+                </div>
+                
+                <div class="sort-group">
+                    <h3>Sort by:</h3>
+                    <select id="sortSelect">
+                        <option value="relevance">Relevance</option>
+                        <option value="rating">Rating</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="delivery-time">Delivery Time</option>
+                        <option value="distance">Distance</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <div class="results-header">
+                <h2 id="resultsTitle">Popular Searches</h2>
+                <p id="resultsCount">Showing popular dishes and restaurants</p>
+            </div>
+            
+            <div class="results-container">
+                <!-- Popular Categories -->
+                <div class="category-grid" id="categoryGrid">
+                    <div class="category-card" data-category="indian">
+                        <div class="category-image">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <h3>Indian Cuisine</h3>
+                        <p>150+ dishes</p>
+                    </div>
+                    
+                    <div class="category-card" data-category="italian">
+                        <div class="category-image">
+                            <i class="fas fa-pizza-slice"></i>
+                        </div>
+                        <h3>Italian</h3>
+                        <p>80+ dishes</p>
+                    </div>
+                    
+                    <div class="category-card" data-category="chinese">
+                        <div class="category-image">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Chinese</h3>
+                        <p>120+ dishes</p>
+                    </div>
+                    
+                    <div class="category-card" data-category="fast-food">
+                        <div class="category-image">
+                            <i class="fas fa-hamburger"></i>
+                        </div>
+                        <h3>Fast Food</h3>
+                        <p>90+ dishes</p>
+                    </div>
+                    
+                    <div class="category-card" data-category="desserts">
+                        <div class="category-image">
+                            <i class="fas fa-ice-cream"></i>
+                        </div>
+                        <h3>Desserts</h3>
+                        <p>60+ dishes</p>
+                    </div>
+                    
+                    <div class="category-card" data-category="beverages">
+                        <div class="category-image">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3>Beverages</h3>
+                        <p>40+ drinks</p>
+                    </div>
+                </div>
+
+                <!-- Search Results Grid -->
+                <div class="search-results-grid" id="searchResults" style="display: none;">
+                    <!-- Results will be populated here by JavaScript -->
+                </div>
+                
+                <!-- No Results Message -->
+                <div class="no-results" id="noResults" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>No results found</h3>
+                    <p>Try adjusting your search or filters</p>
+                    <button class="btn btn-primary" onclick="clearSearch()">Clear Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes Section -->
+    <section class="popular-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Dishes</h2>
+                <p class="section-subtitle">Most ordered items this week</p>
+            </div>
+            
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop&crop=center" alt="Butter Chicken" loading="lazy">
+                        <div class="dish-badge">
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Butter Chicken</h3>
+                        <p class="restaurant-name">Spice Garden</p>
+                        <div class="dish-details">
+                            <span class="price">₹320</span>
+                            <span class="delivery-time">
+                                <i class="fas fa-clock"></i>
+                                25 min
+                            </span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="addToCart(1)">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop&crop=center" alt="Margherita Pizza" loading="lazy">
+                        <div class="dish-badge">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Margherita Pizza</h3>
+                        <p class="restaurant-name">Pizza Palace</p>
+                        <div class="dish-details">
+                            <span class="price">₹280</span>
+                            <span class="delivery-time">
+                                <i class="fas fa-clock"></i>
+                                20 min
+                            </span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="addToCart(2)">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPQXFO4B201Ry8o7_Soa7dwhJBrtcwJdE0w&s" alt="Chicken Biryani" loading="lazy">
+                        <div class="dish-badge">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Chicken Biryani</h3>
+                        <p class="restaurant-name">Biryani House</p>
+                        <div class="dish-details">
+                            <span class="price">₹350</span>
+                            <span class="delivery-time">
+                                <i class="fas fa-clock"></i>
+                                30 min
+                            </span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="addToCart(3)">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="dish-card">
+                    <div class="dish-image">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop&crop=center" alt="Classic Burger" loading="lazy">
+                        <div class="dish-badge">
+                            <i class="fas fa-star"></i>
+                            <span>4.4</span>
+                        </div>
+                    </div>
+                    <div class="dish-content">
+                        <h3>Classic Burger</h3>
+                        <p class="restaurant-name">Burger Junction</p>
+                        <div class="dish-details">
+                            <span class="price">₹220</span>
+                            <span class="delivery-time">
+                                <i class="fas fa-clock"></i>
+                                15 min
+                            </span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="addToCart(4)">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+                            <!-- Cart Tab -->
+<!-- 🛒 Cart Tab -->
+<div class="cartTab">
+  <div class="cartHeader">
+    <h1>Shopping Cart</h1>
+    <button class="close">&times;</button>
+  </div>
+
+  <div class="listCart"></div>
+
+  <div class="cartFooter">
+    <div class="cartTotal">
+      <h3>Total: <span id="cartTotalAmount">₹0</span></h3>
+    </div>
+    <button class="checkOut">CHECK OUT</button>
+  </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>ZestyBite</span>
+                    </div>
+                    <p>Delivering happiness, one meal at a time.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 234 567 890</p>
+                        <p><i class="fas fa-envelope"></i> info@zestybite.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Delhi, India</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ZestyBite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../nav.js"></script>
+
+    <script src="../js/cart.js"></script>
+
+</body>
+
+</html>
