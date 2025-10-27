@@ -1477,8 +1477,7 @@ Hero Section
         font-size: 0.9rem;
     }
 }
-<<<<<<< Updated upstream
-=======
+
 
 /* Mobile Extra Small */
 @media (max-width: 360px) {
@@ -1554,8 +1553,8 @@ Hero Section
     .about-stat {
         padding: 12px;
     }
-}
 
+}
 @media (max-width: 320px) {
     .body {
         width: 100% !important;
@@ -1762,7 +1761,4 @@ body.showCart .cartTab {
   background: #f59e0b;
   border-radius: 10px;
 }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+

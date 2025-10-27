@@ -38,8 +38,7 @@ body {
 .btn:hover {
   background-color: #fa8a01;
 }
-<<<<<<< Updated upstream
-=======
+
 body {
   margin: 0;
   padding: 0;
@@ -221,7 +220,4 @@ body.showCart .cartTab {
   background: #f59e0b;
   border-radius: 10px;
 }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
