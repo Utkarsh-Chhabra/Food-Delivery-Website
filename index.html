@@ -14,76 +14,53 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container navbar-container">
-            <a href="#" class="logo cairo-play navbar-brand">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand cairo-play logo" href="../index.html">
                 <i class="fas fa-utensils"></i>
                 ZestyBite
             </a>
 
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarContent">
+            <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link home23">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="pages/About.html" class="nav-link">About us</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Menu</a>
-                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="pages/menu.html" class="nav-link">Menu</a>
+                    </li> -->
                     <li class="nav-item">
                         <a href="pages/contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
 
-                <div class="nav-right">
-                    <a href="tel:+1234567890" class="phone-number d-none d-lg-flex">
-                        <i class="fas fa-phone"></i>
-                        <span style="color: var(--text-color);">
-                            + 91 234 567 890
-                        </span>
+                <div class="d-flex align-items-center">
+                    <a href="tel:+1234567890" class="me-3 d-none d-lg-flex align-items-center phone-number">
+                        <i class="fas fa-phone me-1"></i>
+                        <span>+ 91 234 567 890</span>
                     </a>
 
-                    <div class="nav-icons">
-                        <a href="pages/logIn.html" class="nav-icon">
-                            <i class="fas fa-user"></i>
-                        </a>
-                        <a href="#" class="nav-icon">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="cart-count">0</span>
-                        </a>
-                        <a href="pages/search.html" class="nav-icon">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </div>
+                    <a href="logIn.html" class="nav-link px-2">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="nav-link px-2 position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+
+                    </a>
+                    <a href="search.html" class="nav-link px-2">
+                        <i class="fas fa-search"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
-
-    <!-- <div class="promo-banner">
-        <div class="promo-content">
-            <div class="promo-text">
-                <h3> Grand Opening Celebration!</h3>
-                <p>Use code <strong>GRAND20</strong> and get 20% off on all orders above ₹400</p>
-            </div>
-            <div class="promo-timer">
-                <span>Ends in: </span>
-                <div class="timer">
-                    <span id="hours">23</span>:
-                    <span id="minutes">59</span>:
-                    <span id="seconds">59</span>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <!-- Hero Section -->
     <section class="hero">

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search - ZestyBite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,54 +14,50 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="../index.html" class="logo cairo-play">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand cairo-play logo" href="../index.html">
                 <i class="fas fa-utensils"></i>
                 ZestyBite
             </a>
 
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="About.html" class="nav-link">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="menu.html" class="nav-link">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="nav-right">
-                <a href="tel:+1234567890" class="phone-number">
-                    <i class="fas fa-phone"></i>
-                    <span style="color: var(--text-color);">
-                        + 91 234 567 890
-                    </span>
-                </a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About.html" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
 
-                <div class="nav-icons">
-                    <a href="logIn.html" class="nav-icon">
+                <div class="d-flex align-items-center">
+                    <a href="tel:+1234567890" class="me-3 d-none d-lg-flex align-items-center phone-number">
+                        <i class="fas fa-phone me-1"></i>
+                        <span>+ 91 234 567 890</span>
+                    </a>
+
+                    <a href="logIn.html" class="nav-link px-2">
                         <i class="fas fa-user"></i>
                     </a>
-                    <a href="#" class="nav-icon">
+                    <a href="#" class="nav-link px-2 position-relative">
                         <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">0</span>
+
                     </a>
-                    <a href="search.html" class="nav-icon active">
+                    <a href="search.html" class="nav-link px-2">
                         <i class="fas fa-search"></i>
                     </a>
                 </div>
-            </div>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
         </div>
     </nav>
@@ -282,5 +279,6 @@
 
 </body>
 <script src="../js/search.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </html>

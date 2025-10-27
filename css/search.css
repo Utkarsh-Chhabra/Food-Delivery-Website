@@ -5,13 +5,13 @@
 }
 
 :root {
-    --primary-color: #f39c12;
+    --primary-color: #ff9f2a;
     --secondary-color: #181d21;
-    --accent-color: #f8921e;
-    --text-color: #ff8e38;
+    --accent-color: #ffae48;
+    --text-color: #ffd39b;
     --light-bg: #1a1f24;
-    --card-bg: rgba(255, 255, 255, 0.05);
-    --border-color: rgba(243, 156, 18, 0.2);
+    --card-bg: rgba(255, 255, 255, 0.08);
+    --border-color: rgba(243, 156, 18, 0.35);
     --text-light: #e0e0e0;
     --text-muted: #a0a0a0;
     --success-color: #27ae60;
@@ -34,16 +34,17 @@ body {
 }
 
 /* Navbar */
-/* Navbar */
 .navbar {
+    margin-top: 15px;
     backdrop-filter: blur(15px);
     padding: 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgba(243, 156, 18, 0.1);
+    border-bottom: 1px solid rgba(243, 156, 18, 0.25);
     transition: all 0.3s ease;
+    gap: 20px;
 }
 
 
@@ -145,7 +146,7 @@ body {
     align-items: center;
     padding: 8px 15px;
     border-radius: 20px;
-    background: rgba(243, 156, 18, 0.1);
+    background: rgba(243, 156, 18, 0.22);
     transition: all 0.3s ease;
     border: 1px solid rgba(243, 156, 18, 0.2);
 }
@@ -197,7 +198,7 @@ body {
 
 .nav-icon:hover {
     color: var(--primary-color);
-    background: rgba(243, 156, 18, 0.1);
+    background: rgba(243, 156, 18, 0.22);
     transform: translateY(-3px) scale(1.1);
     box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
 }
@@ -225,7 +226,7 @@ body {
     cursor: pointer;
     padding: 10px;
     border-radius: 8px;
-    background: rgba(243, 156, 18, 0.1);
+    background: rgba(243, 156, 18, 0.22);
     transition: all 0.3s ease;
     z-index: 1001;
 }
@@ -256,6 +257,7 @@ body {
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
 }
+
 
 /* Search Hero Section */
 .search-hero {
@@ -317,7 +319,7 @@ body {
 
 .search-box:focus-within {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.1);
+    box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.18);
 }
 
 .search-icon {
