@@ -537,7 +537,7 @@ body {
 
 /* Search Results Grid */
 .search-results-grid {
-    display: grid;
+    display: flexbox;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }

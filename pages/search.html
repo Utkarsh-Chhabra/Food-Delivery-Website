@@ -71,63 +71,20 @@
             <div class="hero-content">
                 <h1 class="hero-title">Find Your Favorite Food</h1>
                 <p class="hero-description">Search from thousands of dishes and restaurants</p>
-                
+
                 <div class="search-container">
                     <div class="search-box">
                         <i class="fas fa-search search-icon"></i>
-                        <input type="text" id="searchInput" placeholder="Search for dishes, restaurants, cuisines..." autocomplete="off">
+                        <input type="text" id="searchInput" placeholder="Search for dishes, restaurants, cuisines...">
                         <button type="button" class="search-btn" id="searchBtn">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
-                    
-                    <div class="search-suggestions" id="searchSuggestions">
-                        <div class="suggestion-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Recent: Butter Chicken</span>
-                        </div>
-                        <div class="suggestion-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Recent: Pizza Margherita</span>
-                        </div>
-                        <div class="suggestion-item">
-                            <i class="fas fa-fire"></i>
-                            <span>Trending: Biryani</span>
-                        </div>
-                        <div class="suggestion-item">
-                            <i class="fas fa-fire"></i>
-                            <span>Trending: Burger</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Filters Section -->
-    <section class="filters-section">
-        <div class="container">
-            <div class="filters-container">
-                <div class="filter-group">
-                    <h3>Filter by:</h3>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="restaurants">Restaurants</button>
-                        <button class="filter-btn" data-filter="dishes">Dishes</button>
-                        <button class="filter-btn" data-filter="cuisines">Cuisines</button>
+                    <div class="results"></div>
+
+                   
                     </div>
-                </div>
-                
-                <div class="sort-group">
-                    <h3>Sort by:</h3>
-                    <select id="sortSelect">
-                        <option value="relevance">Relevance</option>
-                        <option value="rating">Rating</option>
-                        <option value="price-low">Price: Low to High</option>
-                        <option value="price-high">Price: High to Low</option>
-                        <option value="delivery-time">Delivery Time</option>
-                        <option value="distance">Distance</option>
-                    </select>
                 </div>
             </div>
         </div>
@@ -136,74 +93,18 @@
     <!-- Search Results Section -->
     <section class="results-section">
         <div class="container">
-            <div class="results-header">
-                <h2 id="resultsTitle">Popular Searches</h2>
-                <p id="resultsCount">Showing popular dishes and restaurants</p>
-            </div>
             
-            <div class="results-container">
-                <!-- Popular Categories -->
-                <div class="category-grid" id="categoryGrid">
-                    <div class="category-card" data-category="indian">
-                        <div class="category-image">
-                            <i class="fas fa-pepper-hot"></i>
-                        </div>
-                        <h3>Indian Cuisine</h3>
-                        <p>150+ dishes</p>
-                    </div>
-                    
-                    <div class="category-card" data-category="italian">
-                        <div class="category-image">
-                            <i class="fas fa-pizza-slice"></i>
-                        </div>
-                        <h3>Italian</h3>
-                        <p>80+ dishes</p>
-                    </div>
-                    
-                    <div class="category-card" data-category="chinese">
-                        <div class="category-image">
-                            <i class="fas fa-utensils"></i>
-                        </div>
-                        <h3>Chinese</h3>
-                        <p>120+ dishes</p>
-                    </div>
-                    
-                    <div class="category-card" data-category="fast-food">
-                        <div class="category-image">
-                            <i class="fas fa-hamburger"></i>
-                        </div>
-                        <h3>Fast Food</h3>
-                        <p>90+ dishes</p>
-                    </div>
-                    
-                    <div class="category-card" data-category="desserts">
-                        <div class="category-image">
-                            <i class="fas fa-ice-cream"></i>
-                        </div>
-                        <h3>Desserts</h3>
-                        <p>60+ dishes</p>
-                    </div>
-                    
-                    <div class="category-card" data-category="beverages">
-                        <div class="category-image">
-                            <i class="fas fa-coffee"></i>
-                        </div>
-                        <h3>Beverages</h3>
-                        <p>40+ drinks</p>
-                    </div>
                 </div>
 
                 <!-- Search Results Grid -->
-                <div class="search-results-grid" id="searchResults" style="display: none;">
-                    <!-- Results will be populated here by JavaScript -->
+                <div class="search-results-grid" id="searchResults" style="display: none; ">
                 </div>
-                
+
                 <!-- No Results Message -->
                 <div class="no-results" id="noResults" style="display: none;">
                     <i class="fas fa-search"></i>
                     <h3>No results found</h3>
                     <p>Try adjusting your search or filters</p>
-                    <button class="btn btn-primary" onclick="clearSearch()">Clear Search</button>
                 </div>
             </div>
         </div>
@@ -216,11 +117,12 @@
                 <h2 class="section-title">Popular Dishes</h2>
                 <p class="section-subtitle">Most ordered items this week</p>
             </div>
-            
+
             <div class="dishes-grid">
                 <div class="dish-card">
                     <div class="dish-image">
-                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop&crop=center" alt="Butter Chicken" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop&crop=center"
+                            alt="Butter Chicken" loading="lazy">
                         <div class="dish-badge">
                             <i class="fas fa-star"></i>
                             <span>4.5</span>
@@ -242,10 +144,11 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="dish-card">
                     <div class="dish-image">
-                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop&crop=center" alt="Margherita Pizza" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop&crop=center"
+                            alt="Margherita Pizza" loading="lazy">
                         <div class="dish-badge">
                             <i class="fas fa-star"></i>
                             <span>4.7</span>
@@ -267,10 +170,11 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="dish-card">
                     <div class="dish-image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPQXFO4B201Ry8o7_Soa7dwhJBrtcwJdE0w&s" alt="Chicken Biryani" loading="lazy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPQXFO4B201Ry8o7_Soa7dwhJBrtcwJdE0w&s"
+                            alt="Chicken Biryani" loading="lazy">
                         <div class="dish-badge">
                             <i class="fas fa-star"></i>
                             <span>4.6</span>
@@ -292,10 +196,11 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="dish-card">
                     <div class="dish-image">
-                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop&crop=center" alt="Classic Burger" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop&crop=center"
+                            alt="Classic Burger" loading="lazy">
                         <div class="dish-badge">
                             <i class="fas fa-star"></i>
                             <span>4.4</span>
@@ -338,7 +243,7 @@
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
@@ -348,7 +253,7 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Support</h4>
                     <ul>
@@ -358,7 +263,7 @@
                         <li><a href="#">Refund Policy</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <div class="contact-info">
@@ -368,14 +273,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2024 ZestyBite. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../nav.js"></script>
 </body>
+<script src="../js/search.js" defer></script>
 
 </html>

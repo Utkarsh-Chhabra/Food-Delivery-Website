@@ -1,0 +1,116 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "category": "Pizza",
+      "items": [
+        {
+          "id": 101,
+          "name": "Margherita Pizza",
+          "description": "Classic delight with 100% real mozzarella cheese.",
+          "price": 299,
+          "currency": "INR",
+          "tags": ["cheese", "italian", "classic", "veg"],
+          "rating": 4.5,
+          "image_url": "../assets/Menu/Pizza/Margherita-Pizza-082.jpg",
+          "available": true
+        },
+        {
+          "id": 102,
+          "name": "Pepperoni Pizza",
+          "description": "Spicy pepperoni and mozzarella cheese on crispy crust.",
+          "price": 399,
+          "currency": "INR",
+          "tags": ["non-veg", "spicy", "italian", "pepperoni"],
+          "rating": 4.7,
+          "image_url": "../assets/Menu/Pizza/Pepperoni-Pizza-Recipe-Sip-Bite-Go.jpg",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Burgers",
+      "items": [
+        {
+          "id": 201,
+          "name": "Classic Veg Burger",
+          "description": "Crispy veggie patty, fresh lettuce, and mayo in a soft bun.",
+          "price": 149,
+          "currency": "INR",
+          "tags": ["veg", "fastfood", "crispy", "mayo"],
+          "rating": 4.2,
+          "image_url": "../assets/Menu/Burger/veg_burger.webp",
+          "available": true
+        },
+        {
+          "id": 202,
+          "name": "Chicken Cheese Burger",
+          "description": "Grilled chicken patty with melted cheese and lettuce.",
+          "price": 199,
+          "currency": "INR",
+          "tags": ["non-veg", "cheese", "grilled", "fastfood"],
+          "rating": 4.6,
+          "image_url": "../assets/Menu/Burgers/chicken_cheese.jpg",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Beverages",
+      "items": [
+        {
+          "id": 301,
+          "name": "Cold Coffee",
+          "description": "Chilled coffee with whipped cream topping.",
+          "price": 99,
+          "currency": "INR",
+          "tags": ["cold", "coffee", "beverage"],
+          "rating": 4.3,
+          "image_url": "assets/Menu/Beverages/cold_coffee.jpg",
+          "available": true
+        },
+        {
+          "id": 302,
+          "name": "Fresh Lime Soda",
+          "description": "Refreshing lime soda served chilled.",
+          "price": 79,
+          "currency": "INR",
+          "tags": ["refreshing", "lime", "cold", "soda"],
+          "rating": 4.1,
+          "image_url": "assets/Menu/Beverages/lime_soda.jpg",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Desserts",
+      "items": [
+        {
+          "id": 401,
+          "name": "Chocolate Lava Cake",
+          "description": "Rich chocolate cake with molten lava center.",
+          "price": 129,
+          "currency": "INR",
+          "tags": ["dessert", "chocolate", "sweet"],
+          "rating": 4.8,
+          "image_url": "assets/Menu/Desserts/lava_cake.jpg",
+          "available": true
+        },
+        {
+          "id": 402,
+          "name": "Vanilla Ice Cream",
+          "description": "Classic creamy vanilla scoop.",
+          "price": 69,
+          "currency": "INR",
+          "tags": ["ice-cream", "dessert", "sweet"],
+          "rating": 4.4,
+          "image_url": "assets/Menu/Desserts/vanilla_icecream.jpg",
+          "available": true
+        }
+      ]
+    }
+  ]
+}
