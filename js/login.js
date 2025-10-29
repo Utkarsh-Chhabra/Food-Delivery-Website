@@ -22,6 +22,7 @@ form.addEventListener("submit", async (e) => {
         const user = users.find(u => u.email === email && u.password === password);
 
         if (user) {
+            localStorage.setItem("user", user.email);
             window.location.href = "banner.html";
         } else {
             alert("Invalid email or password.");
