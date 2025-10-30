@@ -1,15 +1,23 @@
 let menuData = [];
+const url = "http://localhost:8000/menu"
 
-fetch("../DB/menu.json")
-    .then((response) => response.json())
-    .then((data) => {
-        menuData = data.menu;
-        console.log("Menu data loaded");
-    })
-    .catch((error) => {
-        console.error("Error loading menu data:", error);
-    });
+// fetch("../DB/menu.json")
+//     .then((response) => response.json())
+//     .then((data) => {
+//         menuData = data.menu;
+//         console.log("Menu data loaded");
+//     })
+//     .catch((error) => {
+//         console.error("Error loading menu data:", error);
+//     });
 
+async function loadMenuData() {
+    const data = await fetch(url);
+    menuData = await data.json();
+    console.log("Menu data loaded");
+}
+
+loadMenuData();
 
 function performSearch() {
     const query = document

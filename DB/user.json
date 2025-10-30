@@ -4,6 +4,24 @@
       "id": "e763",
       "email": "demoAccount@gmail.com",
       "password": "demoAccount"
+    },
+    {
+      "id": "2a89",
+      "fullname": "Demon",
+      "email": "swift.asp.xyqt@hidesmail.net",
+      "phone": "6874654552",
+      "altNumber": "32234324324",
+      "password": "swift.asp.xyqt",
+      "address": "Samadhi Road Steet no 6 Adarsh Colony Khanna"
+    },
+    {
+      "id": "f727",
+      "fullname": "Pratham",
+      "email": "prathamgupta00715@gmail.com",
+      "phone": "6874654552",
+      "altNumber": "32234324324",
+      "password": "swift.asp.xyqt",
+      "address": "Samadhi Road Steet no 6 Adarsh Colony Khanna"
     }
   ]
 }
