@@ -16,11 +16,28 @@ form.addEventListener("submit", async (e) => {
         return;
     }
 
-    const emailInput = document.getElementById("email");
-    if (!emailInput.checkValidity()) {
+    if (fullname.length < 3) {
+        alert("Full name must be at least 3 characters long.");
+        return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
         alert("Please enter a valid email address.");
         return;
     }
+
+    if (!/^\d{10}$/.test(phone)) {
+        alert("Phone number must be exactly 10 digits.");
+        return;
+    }
+
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return;
+    }
+
+
 
     try {
         const checkResponse = await fetch(url);
