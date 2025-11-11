@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Hero from "./components/Hero"
 import Login from "./components/Login"
 import Navbar from "./components/Navbar"
+import SignUp from './components/SignUp'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/login" element={<Login />} />
+          <Route path='/signup' element={<SignUp />} />
         </Routes>
       </div>
     </BrowserRouter>

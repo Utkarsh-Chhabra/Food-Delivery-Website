@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [users, setUsers] = useState([]);
+    const navigate = useNavigate();
 
   useEffect(() => {
-    // Load users from local JSON file
     fetch('http://localhost:3000/users')
       .then((res) => res.json())
       .then((data) => setUsers(data))
@@ -21,7 +22,17 @@ const Login = () => {
     );
 
     if (foundUser) {
-      alert('✅ Login successful!');
+      const nameFromEmail = (addr) => {
+        const part = (addr || '').split('@')[0] || addr;
+        return part.charAt(0).toUpperCase() + part.slice(1);
+      };
+
+      const userObj = { email: foundUser.email, name: nameFromEmail(foundUser.email) };
+      // persist logged-in user locally so Navbar can read it
+      localStorage.setItem('user', JSON.stringify(userObj));
+
+      alert('✅ Login successful! Redirecting...');
+      navigate('/');
     } else {
       alert('❌ Invalid email or password');
     }
@@ -56,7 +67,7 @@ const Login = () => {
             </a>
             <p className="text-white mt-4">
               Don't have an account?{' '}
-              <a className="text-sm text-amber-500 hover:underline mt-4" href="#">
+              <a className="text-sm text-amber-500 hover:underline mt-4" href="/signup">
                 Signup
               </a>
             </p>
