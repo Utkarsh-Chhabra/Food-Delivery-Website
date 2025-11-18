@@ -3,6 +3,9 @@ import Home from "./components/Home"
 import Login from "./components/Login"
 import Navbar from "./components/Navbar"
 import SignUp from './components/SignUp'
+import HealthyBytes from './components/HealthyBytes'
+import GymFreak from './components/GymFreak'
+import AboutPage from './components/AboutPage'
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
+          <Route path="/healtybytes" element={<HealthyBytes />} />
+          <Route path='/gymfreak' element={<GymFreak />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </div>
     </BrowserRouter>

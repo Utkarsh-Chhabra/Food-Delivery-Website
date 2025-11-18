@@ -25,7 +25,7 @@ const Hero = () => {
 
         {/* Button */}
         <div>
-          <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold px-6 py-3 rounded-full shadow-[0_0_25px_-5px_#f59e0b] transition duration-300">
+          <button className="bg-amber-400 hover:bg-amber-500 text-gray-900 font-semibold px-6 py-3 rounded-full shadow-[0_0_25px_-5px_#f59e0b] transition duration-300 cursor-pointer">
             <Utensils strokeWidth={2} className="inline mr-2" size={20} /> Order
             Now
           </button>
