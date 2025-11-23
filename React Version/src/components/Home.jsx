@@ -12,7 +12,6 @@ export default function Home() {
             <Offers />
             <Categories />
             <About />
-            <Footer />
         </div>
     );
 }

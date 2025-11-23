@@ -35,7 +35,7 @@ export default function Navbar() {
         try {
             localStorage.removeItem('user');
         } catch {
-            // pass
+            console.log("User Removed From Local Storage!");
         }
         setUser(null);
         navigate('/');

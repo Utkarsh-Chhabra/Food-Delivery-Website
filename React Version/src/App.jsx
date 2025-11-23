@@ -6,6 +6,7 @@ import SignUp from './components/SignUp'
 import HealthyBytes from './components/HealthyBytes'
 import GymFreak from './components/GymFreak'
 import AboutPage from './components/AboutPage'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/gymfreak' element={<GymFreak />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   )
