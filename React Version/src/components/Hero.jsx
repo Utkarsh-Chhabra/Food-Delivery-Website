@@ -1,8 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Utensils } from "lucide-react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Hero = () => {
+  const numRef = useRef(null);
+  const numMenu = useRef(null);
+
+  useEffect(() => {
+
+    let start = 950;
+    const end = 1000;
+    
+    const timer = setInterval(() => {
+      start += 1;
+      numRef.current.textContent = `${start}+`;
+      if (start >= end) clearInterval(timer);
+    }, 1);
+
+
+  }, []);
+
+  useEffect(() => {
+
+    let start = 0;
+    const end = 50;
+
+    const timer = setInterval(() => {
+      start += 1;
+      numMenu.current.textContent = `${start}+`;
+      if (start >= end) clearInterval(timer);
+    }, 1);
+
+  }, []);
+
   return (
     <section className="relative flex flex-col-reverse md:flex-row items-center justify-center min-h-screen bg-gray-900 text-white px-6 md:px-16 lg:px-24 overflow-hidden">
       {/* LEFT SIDE */}
@@ -34,17 +64,25 @@ const Hero = () => {
         {/* Stats */}
         <div className="flex flex-wrap justify-center md:justify-start gap-8 sm:gap-12 pt-6">
           <div className="text-center md:text-left">
-            <p className="text-2xl sm:text-3xl font-bold text-amber-400">
-              1000+
+            <p
+              className="text-2xl sm:text-3xl font-bold text-amber-400"
+              ref={el => (numRef.current = el)}
+            >
+              0+
             </p>
-            <p className="text-gray-400 text-sm sm:text-base">
-              Happy Customers
-            </p>
+            <p className="text-gray-400 text-sm sm:text-base">Happy Customers</p>
           </div>
+
           <div className="text-center md:text-left">
-            <p className="text-2xl sm:text-3xl font-bold text-amber-400">50+</p>
+            <p
+              className="text-2xl sm:text-3xl font-bold text-amber-400"
+              ref={el => (numMenu.current = el)}
+            >
+              0+
+            </p>
             <p className="text-gray-400 text-sm sm:text-base">Menu Items</p>
           </div>
+
           <div className="text-center md:text-left">
             <p className="text-2xl sm:text-3xl font-bold text-amber-400">24/7</p>
             <p className="text-gray-400 text-sm sm:text-base">Delivery</p>

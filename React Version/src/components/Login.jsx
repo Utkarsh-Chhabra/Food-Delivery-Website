@@ -28,13 +28,13 @@ const Login = () => {
       };
 
       const userObj = { email: foundUser.email, name: nameFromEmail(foundUser.email) };
-      // persist logged-in user locally so Navbar can read it
+      
       localStorage.setItem('user', JSON.stringify(userObj));
 
-      alert('✅ Login successful! Redirecting...');
+      alert('Login successful! Redirecting...');
       navigate('/');
     } else {
-      alert('❌ Invalid email or password');
+      alert('Invalid email or password');
     }
   };
 

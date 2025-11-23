@@ -4,7 +4,7 @@ import { Heart, Eye, Star, Clock, Shield, Headphones, Tag, Users, ChefHat, Award
 export default function AboutPage() {
     return (
         <div className="min-h-screen bg-slate-950 text-white">
-            {/* Hero Section */}
+            
             <section className="relative pt-24 pb-16 bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
                 <div className="absolute inset-0 bg-linear-to-br from-amber-500/5 via-transparent to-emerald-500/5 pointer-events-none" />
                 <div className="container mx-auto px-6 text-center relative z-10">

@@ -7,7 +7,6 @@ const offers = [
         desc: 'Get 50% off on all pizza orders above ₹500',
         validity: 'Valid till Sunday',
         cta: 'Order Now',
-        // featured: true,
     },
     {
         badge: 'Buy 1 Get 1',
@@ -50,18 +49,17 @@ function OfferCard({ item }) {
 
 export default function OffersSection() {
     return (
-        <section className="offers-section py-12">
-            <div className="container px-6">
+        <section className="py-12">
+            <div className="px-6">
                 <div className="text-center mb-8">
                     <h2 className="font-bold text-amber-400 text-5xl mb-1">Special Offers</h2>
                     <p className="section-subtitle text-gray-400">Don't miss out on our amazing deals and discounts</p>
                 </div>
 
-                <div className="flex flex-wrap -mx-3">
+                <div className="flex flex-wrap justify-center gap-7">
                     {offers.map((o, i) => {
-                        const colClass = o.featured ? 'px-3 w-full sm:w-1/2 lg:w-1/2 mb-6' : 'px-3 w-full sm:w-1/2 lg:w-1/4 mb-6';
                         return (
-                            <div key={o.title + i} className={colClass}>
+                            <div key={o.title + i}>
                                 <OfferCard item={o} />
                             </div>
                         );
