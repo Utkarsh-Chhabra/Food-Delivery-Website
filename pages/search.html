@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search - ZestyBite</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,8 @@
                 ZestyBite
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -50,9 +52,9 @@
                     <a href="logIn.html" class="nav-link px-2 loginLink">
                         <i class="fas fa-user loginIcon"></i>
                     </a>
-                    <a href="#" class="nav-link px-2 position-relative">
+                    <a href="#" class="nav-link px-2 position-relative cart-toggle" aria-label="Open cart">
                         <i class="fas fa-shopping-cart"></i>
-
+                        <span class="cart-count" aria-live="polite">0</span>
                     </a>
                     <a href="search.html" class="nav-link px-2">
                         <i class="fas fa-search"></i>
@@ -80,30 +82,30 @@
 
                     <div class="results"></div>
 
-                   
-                    </div>
+
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
     <!-- Search Results Section -->
     <section class="results-section">
         <div class="container">
-            
-                </div>
 
-                <!-- Search Results Grid -->
-                <div class="search-results-grid" id="searchResults" style="display: none; ">
-                </div>
+        </div>
 
-                <!-- No Results Message -->
-                <div class="no-results" id="noResults" style="display: none;">
-                    <i class="fas fa-search"></i>
-                    <h3>No results found</h3>
-                    <p>Try adjusting your search or filters</p>
-                </div>
-            </div>
+        <!-- Search Results Grid -->
+        <div class="search-results-grid" id="searchResults" style="display: none; ">
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results" id="noResults" style="display: none;">
+            <i class="fas fa-search"></i>
+            <h3>No results found</h3>
+            <p>Try adjusting your search or filters</p>
+        </div>
+        </div>
         </div>
     </section>
 
@@ -135,7 +137,7 @@
                                 25 min
                             </span>
                         </div>
-                        <button class="add-to-cart-btn" onclick="addToCart(1)">
+                        <button class="add-to-cart-btn">
                             <i class="fas fa-plus"></i>
                             Add to Cart
                         </button>
@@ -161,7 +163,7 @@
                                 20 min
                             </span>
                         </div>
-                        <button class="add-to-cart-btn" onclick="addToCart(2)">
+                        <button class="add-to-cart-btn">
                             <i class="fas fa-plus"></i>
                             Add to Cart
                         </button>
@@ -187,7 +189,7 @@
                                 30 min
                             </span>
                         </div>
-                        <button class="add-to-cart-btn" onclick="addToCart(3)">
+                        <button class="add-to-cart-btn">
                             <i class="fas fa-plus"></i>
                             Add to Cart
                         </button>
@@ -213,7 +215,7 @@
                                 15 min
                             </span>
                         </div>
-                        <button class="add-to-cart-btn" onclick="addToCart(4)">
+                        <button class="add-to-cart-btn">
                             <i class="fas fa-plus"></i>
                             Add to Cart
                         </button>
@@ -279,7 +281,10 @@
 
 </body>
 <script src="../js/search.js" defer></script>
+<script src="../js/cart.js" defer></script>
 <script src="../js/userDisplay.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
 </html>
